@@ -1,18 +1,21 @@
-import '../stylesheets/style.css';
+
+import '../sass/main.scss';
 import React from 'react';
 
 class Header extends React.Component {
-  render(){
+  render() {
     return (
       <header className="header">
-        <div className="logo-box">
-          <img src={require("../img/logo-white.png")} alt="Natours Logo" className="logo" />
+        <div className="header__logo-box">
+          <img src={require("../img/logo-white.png")} alt="Natours Logo" className="header__logo" />
         </div>
-
-        <h1 className="heading-primary">
-          <span className="heading-primary-main">Outdoors</span>
-          <span className="heading-primary-sub">is where life happens</span>
-        </h1>
+          <div className="header__text-box">
+            <h1 className="heading-primary">
+              <span className="heading-primary--main">Outdoors</span>
+              <span className="heading-primary--sub">is where life happens</span>
+            </h1>
+            <a href="#" className="btn btn--white btn--animated">Discover our tours</a>
+          </div>
       </header>
     )
   }
