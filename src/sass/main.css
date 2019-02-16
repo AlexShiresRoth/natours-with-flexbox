@@ -285,6 +285,58 @@ body {
           transform: translateY(0);
 }
 
+.composition__photo {
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline-offset: 2rem;
+}
+
+.composition__photo--p1 {
+  -webkit-transform: translate(0, -10%);
+          transform: translate(0, -10%);
+}
+
+.composition__photo--p1:hover {
+  -webkit-transform: scale(1.05) translateY(-10%);
+          transform: scale(1.05) translateY(-10%);
+}
+
+.composition__photo--p2 {
+  -webkit-transform: translate(80%, -90%);
+          transform: translate(80%, -90%);
+}
+
+.composition__photo--p2:hover {
+  -webkit-transform: scale(1.05) translate(80%, -90.5%);
+          transform: scale(1.05) translate(80%, -90.5%);
+}
+
+.composition__photo--p3 {
+  -webkit-transform: translate(35%, -150%);
+          transform: translate(35%, -150%);
+}
+
+.composition__photo--p3:hover {
+  -webkit-transform: translate(35%, -150.5%) scale(1.05);
+          transform: translate(35%, -150.5%) scale(1.05);
+}
+
+.composition__photo:hover {
+  outline: 1.5rem solid #55c57a;
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 /*===================
 ===================*/
 /*================

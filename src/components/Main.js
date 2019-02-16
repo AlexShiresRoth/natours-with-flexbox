@@ -22,7 +22,9 @@ const Main = (props) => {
                         <a  href="#" className="btn-text">Learn More &rarr; </a>
                     </div>
                     <div className="column-1-of-2">
-                        images
+                        <img src={require("../img/nat-1-large.jpg")} className="composition__photo composition__photo--p1" />
+                        <img src={require('../img/nat-2-large.jpg')} className="composition__photo composition__photo--p2" />
+                        <img src={require('../img/nat-3-large.jpg')} className="composition__photo composition__photo--p3" />
                     </div>
                 </div>
             </section>
