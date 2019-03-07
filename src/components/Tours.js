@@ -13,7 +13,16 @@ const Tours = (props) => {
                     <div className="column-1-of-3">
                         <div className="card">
                             <div className="card__side card__side--front">
-                                FRONT
+                                <div className="card__picture card__picture--1">
+                                    &nbsp;
+                                    picture
+                                </div>
+                                <h4 className="card__heading">
+                                    <span className="card__heading-span card__heading-span--1 ">The Sea Explorer</span>
+                                </h4>
+                                <div className="card__details">
+                                    details
+                                </div>
                             </div>
                             <div className="card__side card__side--back card__side--back-1">
                                 BACK
